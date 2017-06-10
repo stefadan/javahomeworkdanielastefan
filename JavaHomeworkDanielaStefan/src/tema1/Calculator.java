@@ -7,7 +7,7 @@ package tema1;
 
 /**
  *
- * @author iulica
+ * @author stefadan
  */
 public class Calculator {
     
