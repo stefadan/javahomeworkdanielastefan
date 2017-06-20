@@ -9,9 +9,6 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    //boolean on;
-    //boolean off;
-
     public void onOff(boolean a){
         if (a == true) {
             System.out.println("Calculator opened");
