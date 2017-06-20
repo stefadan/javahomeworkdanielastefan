@@ -5,10 +5,6 @@
  */
 package javahomeworkdanielastefan;
 
-/**
- *
- * @author iulica
- */
 public class JavaHomeworkDanielaStefan {
 
     /**
