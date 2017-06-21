@@ -13,9 +13,10 @@ public class Button {
     public void readNumber(int a){
         this.number = a;
     }
-    
+        
     public void readOperation(char a){
         this.operation = a;
     }
+   
     
 }

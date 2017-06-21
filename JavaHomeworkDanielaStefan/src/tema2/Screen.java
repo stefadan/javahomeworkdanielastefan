@@ -7,36 +7,32 @@ package tema2;
 
 public class Screen {
     
-    public void initDisplay(){
-        System.out.println("\t\t" + 0 );
-    }
-
-    public boolean zeroDivide(Button a, Button p){
-        //System.out.println("p--"+p.operation+"--"+a.number);
-        if (a.number == 0 && p.operation == '/') {
-            return false;
-        }
-        return true;
+    public void clear(int a){
+        a = 0;
     }
     
-    public double displayResult(Button a, Button b, Button p){
-        if (p.operation == '+')
-            {
-                return a.number + b.number;
-            }
-        else if (p.operation == '-')
-            {
-                return a.number - b.number;
-            }
-        else if (p.operation == '*'){
-                return a.number * b.number;
-            }
-        else if(p.operation == '/'){
-                if (b.number!=0){
-                    return a.number / (double)b.number;
-                }
-            }
-        return 0;
+    public void display(int val){
+        System.out.println("\t\t" + val);
+    } 
+
+    public void display(double val){
+        System.out.println("\t\t" + val);
+    } 
+    
+    public int addition(int x, int y) {
+        return x + y;
     }
-        
+
+    public int subtraction(int x, int y) {
+        return x - y;
+    }
+
+    public int multiplication(int x, int y) {
+        return x * y;
+    }
+
+    public double division(int x, int y) {
+        return (double)(x/(double)y);
+    }
+    
 }

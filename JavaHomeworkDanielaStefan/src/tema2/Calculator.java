@@ -8,16 +8,6 @@ package tema2;
 import java.util.Scanner;
 
 public class Calculator {
-
-    public void onOff(boolean a){
-        if (a == true) {
-            System.out.println("Calculator opened");
-        }
-        else {
-            System.out.println("Calculator closed");
-        }
-    }
-
       
     public static void main (String[] args){
         
@@ -28,9 +18,7 @@ public class Calculator {
         Calculator c = new Calculator();
         Screen e = new Screen();
         Button a = new Button(); Button b = new Button(); Button p = new Button();
-        c.onOff(true);
-        e.initDisplay();
-
+        
         while (goOn == true){        
                 System.out.println("Please provide first number: ");        
                 a.readNumber(s.nextInt());
@@ -39,19 +27,31 @@ public class Calculator {
                 p.readOperation(o);
                 System.out.println("Please provide second number: ");
                 b.readNumber(s.nextInt());
-            
-                    if (e.zeroDivide(b, p) == true ) {
-                        System.out.println("Result " + e.displayResult(a, b, p));    
-                        }
-                    else{
-                        System.out.println("Cannot divide to 0" );
-                        }     
-            
+                
+                switch(o){
+                    case '+' :
+                    System.out.println("o="+o);
+                        e.display(e.addition(a.number, b.number));
+                        break;
+                    case '-' :
+                        e.display(e.subtraction(a.number, b.number));
+                        break;
+                     case '*' : 
+                        e.display(e.multiplication(a.number, b.number));
+                        break;
+                    case '/' : 
+                        if (b.number != 0 ) {
+                            e.display(e.division(a.number, b.number));    
+                            }
+                        break;
+                    default :
+                        break;
+                }
+
                 System.out.println("Press X to close calculator or any key to continue");
                 char x = s.next().charAt(0);
                     if (x == 'X'){
                         goOn = false; //execution is finished 
-                        c.onOff(goOn);//close the calculator
                     }
                     else {
                         goOn = true; 
@@ -59,7 +59,3 @@ public class Calculator {
             }  
        }    
     }
-        
-
-    
-
