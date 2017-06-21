@@ -49,6 +49,7 @@ public class Calculator {
                 }
 
                 System.out.println("Press X to close calculator or any key to continue");
+               
                 char x = s.next().charAt(0);
                     if (x == 'X'){
                         goOn = false; //execution is finished 

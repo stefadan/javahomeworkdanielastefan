@@ -7,10 +7,6 @@ package tema2;
 
 public class Screen {
     
-    public void clear(int a){
-        a = 0;
-    }
-    
     public void display(int val){
         System.out.println("\t\t" + val);
     } 
