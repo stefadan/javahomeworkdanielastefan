@@ -5,9 +5,10 @@
  */
 package tema2;
 
+
 import java.util.Scanner;
 
-public class Calculator {
+public class ComputerOOP {
       
     public static void main (String[] args){
         
@@ -15,7 +16,7 @@ public class Calculator {
         char o;
         boolean goOn = true; //the calculator will go on with another calculation       
         
-        Calculator c = new Calculator();
+        ComputerOOP c = new ComputerOOP();
         Screen e = new Screen();
         Button a = new Button(); Button b = new Button(); Button p = new Button();
         
