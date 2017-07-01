@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 package tema3;
-
-/**
- *
- * @author iulica
- */
 public interface Saleable {
         /** 
     @const REC_SALE_PRICE is recommended price to sell 
