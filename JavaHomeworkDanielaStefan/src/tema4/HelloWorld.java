@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tema21;
-
-public interface Buton {
-    public void apasa();
-}
+package tema4;
+   public interface HelloWorld { 
+        public void greet(); 
+        public void greetSomeone(String someone); 
+    } 
