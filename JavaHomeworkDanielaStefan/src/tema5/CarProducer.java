@@ -17,6 +17,5 @@ public class CarProducer {
     public Car getLoganCar(Color c){
         return new LoganCar(c);
     }
-
     
 }

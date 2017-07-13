@@ -5,6 +5,8 @@
  */
 package tema5;
 
+import java.util.ArrayList;
+
 public class DealerOrder {
 
         static void reportCar(Car c){
@@ -16,12 +18,14 @@ public class DealerOrder {
                  reportCar(c); 
             }
         }
-           
+        
     public static void main(String[] args){
         CarDealer cd = new CarDealer();
+        
         Car mercedes = cd.orderMercedesCar(Color.RED);    
         cd.setSellPrice(mercedes, 2000); //2000 seller expenses
         cd.setRentPrice(400);
+        cd.carPark(mercedes);//car parked
         System.out.println("Car offer: "+mercedes.getBrand()+"\t color: "+mercedes.getColor()+"\t producerPrice: "+mercedes.getPrice()+"\t sellerPrice: "+cd.getSellPrice()+"\t rentPrice: "+cd.getRentPrice());
 
         Car renault = cd.orderRenaultCar(Color.WHITE);    
@@ -32,15 +36,21 @@ public class DealerOrder {
         Car logan = cd.orderLoganCar(Color.BLACK);    
         cd.setSellPrice(logan, 1000); //1000 seller expenses
         cd.setRentPrice(200);
+        cd.carPark(logan); //car parked
         System.out.println("Car offer: "+logan.getBrand()+"\t color: "+logan.getColor()+"\t producerPrice: "+logan.getPrice()+"\t sellerPrice: "+cd.getSellPrice()+"\t rentPrice: "+cd.getRentPrice());
-
+        
         Car anotherLogan = cd.orderLoganCar(Color.WHITE);    
         cd.setSellPrice(anotherLogan, 1000); //1000 seller expenses
         cd.setRentPrice(200);
         
         Car[] m = {mercedes, logan, renault, anotherLogan};
         reportAll(m);       
-        
+
+        ArrayList<Car> al = cd.reportList();//diplay cars parked
+        for (Car a: al){
+            System.out.println("Car parked: "+a.getBrand()+" price: "+a.getPrice()+" color: "+a.getColor()+" "+cd.getSellPrice());
+        }
+
     }
     
 }

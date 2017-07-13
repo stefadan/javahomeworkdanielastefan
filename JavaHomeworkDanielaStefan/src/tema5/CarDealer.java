@@ -5,10 +5,13 @@
  */
 package tema5;
 
+import java.util.ArrayList;
+
 public class CarDealer implements Saleable, Rentable {
     private double sellPrice;
     private double rentPrice;
-
+    ArrayList<Car> al = new ArrayList<Car>();
+    
     @Override
     public void setSellPrice(Car c, double sellerAmount){
         sellPrice = c.getPrice() + c.getPrice()*0.19 + sellerAmount;
@@ -27,22 +30,28 @@ public class CarDealer implements Saleable, Rentable {
         return rentPrice;
     }
 
-    //CarProducer cp = new CarProducer();
-    public CarProducer carProducer(){
+    CarProducer cp = new CarProducer();
+    /*public CarProducer carProducer(){
         return new CarProducer();
-    }
+    }*/
     
     public Car orderMercedesCar(Color c){
-        return carProducer().getMercedesCar(c); 
+        return cp.getMercedesCar(c); 
     }
 
     public Car orderRenaultCar(Color c){
-        return carProducer().getRenaultCar(c); 
+        return cp.getRenaultCar(c); 
     }
 
     public Car orderLoganCar(Color c){
-        return carProducer().getLoganCar(c); 
+        return cp.getLoganCar(c); 
     }
 
+    public void carPark(Car c){
+        al.add(c);
+    }
     
+    public ArrayList<Car> reportList(){
+        return al;
+    }
 }
