@@ -5,6 +5,7 @@
  */
 package tema5;
 
+
 public interface Rentable {
     public void setRentPrice(double rentAmount);
 }
