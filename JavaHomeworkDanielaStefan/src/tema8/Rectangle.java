@@ -5,10 +5,6 @@
  */
 package tema8;
 
-/**
- *
- * @author iulica
- */
 public class Rectangle extends TwoDimensions implements Definibila{
 
     @Override

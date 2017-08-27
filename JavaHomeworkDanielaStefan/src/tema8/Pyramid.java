@@ -5,10 +5,6 @@
  */
 package tema8;
 
-/**
- *
- * @author iulica
- */
 public class Pyramid extends ThreeDimensions implements Definibila{
     String name = this.getClass().getSimpleName()+" is ";
     @Override

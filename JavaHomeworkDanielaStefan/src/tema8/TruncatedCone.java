@@ -5,10 +5,6 @@
  */
 package tema8;
 
-/**
- *
- * @author iulica
- */
 public class TruncatedCone extends Cone implements Definibila{
     @Override
     public String getDefinition(){

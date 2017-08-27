@@ -5,10 +5,6 @@
  */
 package tema8;
 
-/**
- *
- * @author iulica
- */
 public class Circle extends TwoDimensions implements Definibila {
        @Override
     public String getDefinition() {

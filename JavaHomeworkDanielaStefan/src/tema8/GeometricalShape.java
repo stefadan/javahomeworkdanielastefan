@@ -5,10 +5,6 @@
  */
 package tema8;
 
-/**
- *
- * @author iulica
- */
 public class GeometricalShape implements Definibila{
    
     @Override
