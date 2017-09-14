@@ -9,7 +9,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Scenariu {
-
 	public static void main (String[] args){
 	    
 			Tv tv = new Tv();
