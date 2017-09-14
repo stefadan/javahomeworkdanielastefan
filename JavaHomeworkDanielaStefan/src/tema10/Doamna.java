@@ -5,6 +5,7 @@
  */
 package tema10;
 
+
 public class Doamna extends Thread{
 
 	private Domnul domn;

@@ -6,6 +6,7 @@
 package tema10;
 
 public class Tigareta extends Thread {
+    
     private Doamna doamna;
     public Tigareta(Doamna d){
         doamna = d;

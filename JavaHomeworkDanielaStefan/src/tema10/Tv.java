@@ -6,7 +6,8 @@
 package tema10;
 
 public class Tv extends Thread {
-	private boolean emisiunePreferata = false;
+	
+        private boolean emisiunePreferata = false;
         
 	public void incepeEmisiune(){
 		emisiunePreferata = true;

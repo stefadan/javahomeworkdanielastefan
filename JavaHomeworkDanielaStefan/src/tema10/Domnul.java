@@ -5,6 +5,7 @@
  */
 package tema10;
 
+
 public class Domnul extends Thread{
 	
 	private Tv tv;
