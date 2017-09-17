@@ -5,7 +5,6 @@
  */
 package tema10;
 
-
 public class Doamna extends Thread{
 
     
