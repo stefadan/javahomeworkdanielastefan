@@ -8,6 +8,7 @@ package tema10;
 
 public class Doamna extends Thread{
 
+    
 	private Domnul domn;
 	public Doamna(Domnul b){
 		domn = b;
