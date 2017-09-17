@@ -12,6 +12,7 @@ public class Doamna extends Thread{
 	public Doamna(Domnul b){
 		domn = b;
 	}
+        
 	
 	public void run(){
 		synchronized(domn){
