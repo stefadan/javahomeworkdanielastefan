@@ -10,5 +10,9 @@ package test20170917;
  * @author iulica
  */
 public class Test20170917 {
+
+        public static void main (String args[]){
+            System.out.println("Test20170917");
+        }
     
 }
