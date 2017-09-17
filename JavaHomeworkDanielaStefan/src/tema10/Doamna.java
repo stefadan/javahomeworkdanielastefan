@@ -18,6 +18,7 @@ public class Doamna extends Thread{
 			try{
                             domn.wait();
 			}
+                        
 			catch(InterruptedException e){}
 			
 			doamnaSeTrezeste();
